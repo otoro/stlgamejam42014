@@ -221,6 +221,7 @@ MonoBehaviour:
   background: {fileID: 1384613870}
   fadeLength: 2
   credits: {fileID: 2140384949}
+  titleSize: 
 --- !u!114 &1538385102
 MonoBehaviour:
   m_ObjectHideFlags: 0
