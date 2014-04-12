@@ -221,7 +221,7 @@ MonoBehaviour:
   background: {fileID: 1384613870}
   fadeLength: 2
   credits: {fileID: 2140384949}
-  titleSize: 
+  titleSize: 28
 --- !u!114 &1538385102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
-  m_FontSize: 40
+  m_FontSize: 25
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
