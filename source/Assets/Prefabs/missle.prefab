@@ -9,11 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 50: {fileID: 5000000}
-  - 61: {fileID: 6100002}
-  - 61: {fileID: 6100000}
   - 96: {fileID: 9600000}
   - 114: {fileID: 11400000}
+  - 54: {fileID: 5400000}
+  - 65: {fileID: 6500000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: missle
   m_TagString: Untagged
@@ -32,43 +32,33 @@ Transform:
   m_LocalScale: {x: .150000006, y: .204879537, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!50 &5000000
-Rigidbody2D:
+--- !u!54 &5400000
+Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 10
-  m_LinearDrag: 0
-  m_AngularDrag: .5
-  m_GravityScale: 1
-  m_FixedAngle: 0
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_Constraints: 56
   m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!65 &6500000
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .519999981, y: 1.20000005}
-  m_Center: {x: -3.20000005, y: -.0399999991}
---- !u!61 &6100002
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 7.51999998, y: .529999971}
-  m_Center: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 7.61000013, y: 1.29999995, z: .200000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!96 &9600000
 TrailRenderer:
   m_ObjectHideFlags: 1
@@ -124,6 +114,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeOut: 1
   detachChildren: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d850859a92573964ab18f0da06afb1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionRadius: 5
+  explosionPower: 10
+  explosionDamage: 100
+  explosionTimeout: 2
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
