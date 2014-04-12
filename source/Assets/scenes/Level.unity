@@ -1219,6 +1219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdd3a0467b94dd459103d9c8b9887dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameCamera: {fileID: 2131649311}
   speed: 13.5
 --- !u!212 &103348869
 SpriteRenderer:
@@ -1580,6 +1581,8 @@ GameObject:
   - 92: {fileID: 2131649310}
   - 124: {fileID: 2131649309}
   - 81: {fileID: 2131649308}
+  - 114: {fileID: 2131649313}
+  - 50: {fileID: 2131649314}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1653,3 +1656,31 @@ Transform:
   - {fileID: 1020075961}
   - {fileID: 103348870}
   m_Father: {fileID: 0}
+--- !u!114 &2131649313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131649307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519b9209e05b21e4e9c7602fd5535d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 10, y: 10}
+  direction: {x: 1, y: 0}
+--- !u!50 &2131649314
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131649307}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
