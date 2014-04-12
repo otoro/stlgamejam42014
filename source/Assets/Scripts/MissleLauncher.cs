@@ -14,7 +14,7 @@ public class MissleLauncher : MonoBehaviour {
 
 			Rigidbody2D clone;
 			clone = Instantiate(missleClass, transform.position, transform.rotation) as Rigidbody2D;
-			clone.AddForce(transform.TransformDirection (Vector3.forward * 800));
+			clone.velocity = new Vector2(8000, 6000);
 		}
 
 		if (Input.GetMouseButtonUp(0) && mouseDown) {
