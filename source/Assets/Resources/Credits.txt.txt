@@ -1,0 +1,19 @@
+<b><i><size=60>N<color=red>S</color><color=blue>A</color>(SS)</size></i>
+<size=%TITLE_SIZE%><color=red><META> Team</color>
+<color=blue>St. Louis Game Jam - Apr 2014</color>
+Webster University</size></b>
+
+<color=blue><size=%TITLE_SIZE%><b>Tools:</b></size></color>
+<color=red>Unity</color>
+
+<color=blue><size=%TITLE_SIZE%><b>Story:</b></size></color>
+Someone
+
+<color=blue><size=%TITLE_SIZE%><b>Art:</b></size></color>
+<color=red>Someone</color>
+
+<color=blue><size=%TITLE_SIZE%><b>Programming:</b></size></color>
+Someone
+
+<color=blue><size=%TITLE_SIZE%><b>Sound:</b></size></color>
+<color=red>Someone</color>
