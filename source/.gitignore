@@ -1,15 +1,14 @@
 # =============== #
 # Unity generated #
 # =============== #
-/.*/Temp/*
-/.*/Obj/*
-/.*/UnityGenerated/*
-/.*/Library/*
-/.*/Assets/*
+Temp/
+Obj/
+UnityGenerated/
+Library/
 # ======================= #
 # Unignore specific files #
 # ======================= #
-!/.*/Assets/Scripts/*
+!Assets/Scripts/*
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
