@@ -5,7 +5,7 @@ public class MovePlayer : MonoBehaviour {
 	private float speed;
 	
 	void Start () {
-		speed = 9.5f;
+		speed = 13.5f;
 	}
 	
 	void Update () {
