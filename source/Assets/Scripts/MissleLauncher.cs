@@ -5,7 +5,7 @@ public class MissleLauncher : MonoBehaviour {
 	public Rigidbody2D missleClass;
 	private bool mouseDown;
 
-	void Start () {	}
+	public int MissleSpeed = 100;
 
 	void Update() {
 		if (Input.GetMouseButtonDown(0) && !mouseDown){
@@ -14,7 +14,7 @@ public class MissleLauncher : MonoBehaviour {
 
 			Rigidbody2D clone;
 			clone = Instantiate(missleClass, transform.position, transform.rotation) as Rigidbody2D;
-			clone.velocity = new Vector2(8000, 6000);
+			clone.velocity = new Vector2(MissleSpeed, 0);
 		}
 
 		if (Input.GetMouseButtonUp(0) && mouseDown) {
