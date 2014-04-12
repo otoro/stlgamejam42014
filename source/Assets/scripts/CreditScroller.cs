@@ -27,10 +27,10 @@ public class CreditScroller : MonoBehaviour {
 			SendMessage("startFade");
 		}
 	}
-
+	
     void OnGUI() {
         Event e = Event.current;
-        if (e.button == 0 && e.isMouse)
+		if (e.button == 0 && e.isMouse && Input.GetMouseButtonDown(0))
 			Application.LoadLevel ("Title");
 	}
 }
