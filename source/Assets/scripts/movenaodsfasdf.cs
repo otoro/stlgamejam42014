@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class movenaodsfasdf : MonoBehaviour {
-
+/*
 	// Use this for initialization
 	void Awake () 
 	{
@@ -47,4 +47,5 @@ public class movenaodsfasdf : MonoBehaviour {
 			}
 
 	}
+*/
 }
