@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/scenes/titleDraft.unity
+    path: Assets/Scenes/titleDraft.unity
   - enabled: 1
-    path: Assets/scenes/settings.unity
+    path: Assets/Scenes/settings.unity
