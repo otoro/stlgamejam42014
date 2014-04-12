@@ -14,7 +14,6 @@ public class CreditScroller : MonoBehaviour {
 		creditsText = creditsText.Replace ("%TITLE_SIZE%", "" + titleSize);
 
 		credits.text = creditsText;
-
 	}
 
 	void Update () {
