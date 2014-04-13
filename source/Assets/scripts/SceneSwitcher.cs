@@ -7,24 +7,39 @@ public class SceneSwitcher : MonoBehaviour {
 	public AudioClip mouseOverFx;
 
 	private bool _selected;
-	
+	private bool _loadScene;
+	private bool _freezeControl;
+
 	// Use this for initialization
 	void Start () {			
+		_loadScene = false;
 		_selected = false;
+		_freezeControl = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {        
-		if (Input.GetMouseButtonDown(0) && _selected && sceneName != string.Empty)
-		{
-			if(clickSoundFx != null) {
-				audio.clip = clickSoundFx;
-				audio.Play ();
+		if(!_freezeControl) {
+			if (Input.GetMouseButtonDown(0) && _selected && sceneName != string.Empty)
+			{
+				if(clickSoundFx != null) {
+					audio.clip = clickSoundFx;
+					audio.Play ();
+					_loadScene = true;
+					FreezeControl ();
+				}											
 			}
-			Application.LoadLevel(sceneName);
 		}
+
+		if(!audio.isPlaying && _loadScene) {
+			Application.LoadLevel(sceneName);
+		}	
 	}
-	
+
+	void FreezeControl() {
+		_freezeControl = true;
+	}
+
 	void OnMouseEnter()
 	{
 		audio.clip = mouseOverFx;
