@@ -36,15 +36,15 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: fbeedd9170ec9aa41ac53512e121f6bc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ba707819891e2674989118ea4b66e237, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3.79250813
+  MinDistance: 1.92053986
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
