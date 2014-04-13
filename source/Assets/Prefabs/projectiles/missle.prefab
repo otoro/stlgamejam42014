@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebe971103b2ffc4290ab574a2de2004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  explosion: {fileID: 100000, guid: 9b47da6980777a246b917aaf3e2fd5d5, type: 2}
   timeOut: 3
 --- !u!212 &21200000
 SpriteRenderer:

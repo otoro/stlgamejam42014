@@ -7,13 +7,20 @@ public class rocket : MonoBehaviour {
 	public bool canrocket = true;
 	
 	void Update() {
-		if (canrocket = true){
+		
+		Vector3 position = new Vector3 (transform.position.x,transform.position.y,transform.position.z);
+
+
+		if (canrocket){
 		if (Input.GetMouseButtonDown(1) && !mouseDown){
 			mouseDown = true;
 			Debug.Log("Creating rocket");
+
+			Vector3	position1 = new Vector3(position.x,position.y+10,position.z);
+			Vector3 position2 = new Vector3(position.x,position.y-10,position.z);
 			
-			Rigidbody clone;
-			clone = Instantiate(rocketClass, transform.position, transform.rotation) as Rigidbody;
+				Instantiate(rocketClass, position1, transform.rotation); 
+				Instantiate(rocketClass, position2, transform.rotation); 
 		}
 		
 		if (Input.GetMouseButtonUp(1) && mouseDown) {
