@@ -87,9 +87,11 @@ GameObject:
   - 65: {fileID: 10021002}
   - 54: {fileID: 10021001}
   - 114: {fileID: 10021000}
+  - 114: {fileID: 10021006}
+  - 75: {fileID: 10021007}
   m_Layer: 0
   m_Name: eye
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +118,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10020999}
   serializedVersion: 2
-  m_Mass: 300
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
@@ -175,6 +177,34 @@ Transform:
   m_LocalScale: {x: 1.60000002, y: 1.60000002, z: 1.60000002}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &10021006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10020999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe40f967a58323741aa67c94663a7f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomForce: .5
+  RandomTorque: 10
+  MinSpeed: -30
+  MaxSpeed: 30
+  MinTorque: -20
+  MaxTorque: 30
+--- !u!75 &10021007
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10020999}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &82842745
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +314,7 @@ GameObject:
   - 114: {fileID: 372231144}
   m_Layer: 0
   m_Name: eye
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -440,7 +470,7 @@ GameObject:
   - 114: {fileID: 584844605}
   m_Layer: 0
   m_Name: eye
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -541,7 +571,7 @@ GameObject:
   - 114: {fileID: 964902438}
   m_Layer: 0
   m_Name: eye
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -642,7 +672,7 @@ GameObject:
   - 114: {fileID: 1110889589}
   m_Layer: 0
   m_Name: eye
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -756,7 +786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 5400004, guid: 0287ea00d4e94ee4b9815f66fb9636db, type: 2}
-  initialSpeed: 40
+  initialSpeed: 30
   reloadTime: .0799999982
   currentAmmoCount: 500
   magChangeTime: 1
@@ -922,7 +952,7 @@ GameObject:
   - 114: {fileID: 1787461863}
   m_Layer: 0
   m_Name: eye
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
