@@ -21,6 +21,6 @@ public class accelerationMovement : MonoBehaviour {
 	}
 	void FixedUpdate()
 	{
-		rigidbody2D.velocity = movement;
+		rigidbody.velocity = movement;
 	}
 }
