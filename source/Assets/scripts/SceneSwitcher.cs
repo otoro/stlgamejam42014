@@ -3,7 +3,9 @@ using System.Collections;
 
 public class SceneSwitcher : MonoBehaviour {
 	public string sceneName; // the scene to load
-	
+	public AudioClip clickSoundFx;
+	public AudioClip mouseOverFx;
+
 	private bool _selected;
 	
 	// Use this for initialization
@@ -15,23 +17,23 @@ public class SceneSwitcher : MonoBehaviour {
 	void Update () {        
 		if (Input.GetMouseButtonDown(0) && _selected && sceneName != string.Empty)
 		{
+			if(clickSoundFx != null) {
+				audio.clip = clickSoundFx;
+				audio.Play ();
+			}
 			Application.LoadLevel(sceneName);
-		}
-
-		if(Input.GetMouseButtonDown (0) && _selected) {
-			Debug.Log ("clicked!");
 		}
 	}
 	
-	void OnMouseOver()
+	void OnMouseEnter()
 	{
-		Debug.Log ("mouse over");
+		audio.clip = mouseOverFx;
+		audio.Play ();
 		_selected = true;
 	}
 	
 	void OnMouseExit()
-	{
-		Debug.Log ("mouse exit");
+	{	
 		_selected = false;
 	}
 }

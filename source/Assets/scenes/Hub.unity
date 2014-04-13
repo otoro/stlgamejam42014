@@ -183,6 +183,7 @@ GameObject:
   - 212: {fileID: 180593479}
   - 61: {fileID: 180593478}
   - 114: {fileID: 180593480}
+  - 82: {fileID: 180593481}
   m_Layer: 0
   m_Name: Misson 4
   m_TagString: Untagged
@@ -248,6 +249,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 510225464}
   sceneName: 
+  transitionFx: {fileID: 8300000, guid: f2df7ee7bd498e244b0be5720c19aadb, type: 3}
+  mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
+--- !u!82 &180593481
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 180593476}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3.44830894
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &283065612
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +320,7 @@ GameObject:
   - 212: {fileID: 283065613}
   - 114: {fileID: 283065615}
   - 61: {fileID: 283065616}
+  - 82: {fileID: 283065617}
   m_Layer: 0
   m_Name: Main Menu
   m_TagString: Untagged
@@ -312,6 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Title
+  clickSoundFx: {fileID: 8300000, guid: c474c859d4635224ba4e9fd724d5f597, type: 3}
+  mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
 --- !u!61 &283065616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -323,6 +387,64 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 6.94999981, y: .870000005}
   m_Center: {x: 0, y: 0}
+--- !u!82 &283065617
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283065612}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3.31082916
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &510225464
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +526,7 @@ GameObject:
   - 212: {fileID: 601181348}
   - 61: {fileID: 601181347}
   - 114: {fileID: 601181349}
+  - 82: {fileID: 601181350}
   m_Layer: 0
   m_Name: Misson 3
   m_TagString: Untagged
@@ -469,6 +592,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 106174740}
   sceneName: 
+  transitionFx: {fileID: 8300000, guid: f2df7ee7bd498e244b0be5720c19aadb, type: 3}
+  mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
+--- !u!82 &601181350
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601181345}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3.3370223
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &614186928
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +663,7 @@ GameObject:
   - 212: {fileID: 614186931}
   - 61: {fileID: 614186930}
   - 114: {fileID: 614186932}
+  - 82: {fileID: 614186933}
   m_Layer: 0
   m_Name: Misson 1
   m_TagString: Untagged
@@ -545,6 +729,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 1393143114}
   sceneName: 
+  transitionFx: {fileID: 8300000, guid: f2df7ee7bd498e244b0be5720c19aadb, type: 3}
+  mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
+--- !u!82 &614186933
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614186928}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3.28137803
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &757622815
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +828,7 @@ GameObject:
   - 212: {fileID: 979776919}
   - 61: {fileID: 979776918}
   - 114: {fileID: 979776920}
+  - 82: {fileID: 979776921}
   m_Layer: 0
   m_Name: Misson 2
   m_TagString: Untagged
@@ -649,6 +894,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 1359693068}
   sceneName: 
+  transitionFx: {fileID: 8300000, guid: f2df7ee7bd498e244b0be5720c19aadb, type: 3}
+  mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
+--- !u!82 &979776921
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979776916}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3.03113937
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1068287976
 GameObject:
   m_ObjectHideFlags: 0
