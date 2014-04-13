@@ -32,19 +32,19 @@ public class HealthDisplay : MonoBehaviour {
 				sr.sprite = health0;
 
 			}
-			else if (health > 50.0f) {
+			else if (health > 500.0f) {
 				sr.sprite = health1;
 			}
-			else if(health > 40.0f) {
+			else if(health > 400.0f) {
 				sr.sprite = health2;
 			}
-			else if(health > 30.0f) {
+			else if(health > 300.0f) {
 				sr.sprite = health3;
 			}
-			else if (health > 20.0f) {
+			else if (health > 200.0f) {
 				sr.sprite = health4;
 			}
-			else if (health > 10.0f) {
+			else if (health > 100.0f) {
 				sr.sprite = health5;
 			}
 			else if(health > 0.0f) {

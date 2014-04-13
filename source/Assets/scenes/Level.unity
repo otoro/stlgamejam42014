@@ -30167,7 +30167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0bd6312c74623439203ec5afc68263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 200
+  hitPoints: 400
   detonationDelay: 0
   explosion: {fileID: 400000, guid: 9b47da6980777a246b917aaf3e2fd5d5, type: 2}
   deadReplacement: {fileID: 0}
@@ -52817,6 +52817,10 @@ Prefab:
     - target: {fileID: 400020, guid: 0bffa45b512dc664c9abd89f536f7681, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 0bffa45b512dc664c9abd89f536f7681, type: 2}
+      propertyPath: hitPoints
+      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bffa45b512dc664c9abd89f536f7681, type: 2}
