@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class rocket : MonoBehaviour {
-	public Rigidbody2D rocketClass;
+	public Rigidbody rocketClass;
 	private bool mouseDown;
 	public bool canrocket = true;
 	
@@ -12,8 +12,8 @@ public class rocket : MonoBehaviour {
 			mouseDown = true;
 			Debug.Log("Creating rocket");
 			
-			Rigidbody2D clone;
-			clone = Instantiate(rocketClass, transform.position, transform.rotation) as Rigidbody2D;
+			Rigidbody clone;
+			clone = Instantiate(rocketClass, transform.position, transform.rotation) as Rigidbody;
 		}
 		
 		if (Input.GetMouseButtonUp(1) && mouseDown) {
