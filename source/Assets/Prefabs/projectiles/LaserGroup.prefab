@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
+  - 114: {fileID: 11400006}
   m_Layer: 10
   m_Name: THIS IS USELESS BUT DONT DELETE IT
   m_TagString: Untagged
@@ -47,10 +48,11 @@ GameObject:
   - 135: {fileID: 13500000}
   - 54: {fileID: 5400000}
   - 75: {fileID: 7500002}
+  - 114: {fileID: 11400004}
   m_Layer: 10
   m_Name: laser1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1016138426, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -64,6 +66,7 @@ GameObject:
   - 4: {fileID: 400006}
   - 198: {fileID: 19800004}
   - 199: {fileID: 19900004}
+  - 114: {fileID: 11400008}
   m_Layer: 10
   m_Name: THIS IS USELESS BUT DONT DELETE IT
   m_TagString: Untagged
@@ -84,10 +87,11 @@ GameObject:
   - 135: {fileID: 13500002}
   - 54: {fileID: 5400002}
   - 75: {fileID: 7500000}
+  - 114: {fileID: 11400002}
   m_Layer: 10
   m_Name: laser1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1016138426, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -230,6 +234,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeOut: .100000001
   detachChildren: 1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebe971103b2ffc4290ab574a2de2004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100002, guid: 648dc0f68c036274a92acdd4f1a08143, type: 2}
+  timeOut: 2
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebe971103b2ffc4290ab574a2de2004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100002, guid: 648dc0f68c036274a92acdd4f1a08143, type: 2}
+  timeOut: 2
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4e936a7c673ff4793ac3ef92eb03d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOut: 1
+  detachChildren: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4e936a7c673ff4793ac3ef92eb03d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOut: 1
+  detachChildren: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
