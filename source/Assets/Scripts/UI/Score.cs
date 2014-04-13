@@ -7,7 +7,7 @@ public class Score : MonoBehaviour {
 	public GUIText textField;
 	public GUIText scoreBumpText;
 	
-	ulong scoreValue = 123456;
+	ulong scoreValue = 0;
 
 	public void AddScore(int amount) {
 		scoreValue += (uint) amount;
