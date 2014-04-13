@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Training.unity
   - enabled: 1
     path: Assets/scenes/Level.unity
+  - enabled: 1
+    path: Assets/scenes/Settings Option.unity
