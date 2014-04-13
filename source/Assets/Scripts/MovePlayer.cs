@@ -12,8 +12,8 @@ public class MovePlayer : MonoBehaviour {
 		transform.Translate(x, y, 0);	
 		;
 		Vector3 pos = transform.position;
-		pos.y = Mathf.Clamp(pos.y, (gameCamera.transform.position.y-5), (gameCamera.transform.position.y+5));
-		pos.x = Mathf.Clamp(pos.x, (gameCamera.transform.position.x-5), (gameCamera.transform.position.x+5));
+		pos.y = Mathf.Clamp(pos.y, (gameCamera.transform.position.y-4.6f), (gameCamera.transform.position.y+4.6f));
+		pos.x = Mathf.Clamp(pos.x, (gameCamera.transform.position.x-8.5f), (gameCamera.transform.position.x+8.5f));
 		transform.position = pos;
 	}
 
