@@ -10,8 +10,10 @@ public class EndLevelCheck : MonoBehaviour {
 	void Update () {
 		GameObject head = GameObject.Find ("phreakmouth");
 		GameObject mouth = GameObject.Find ("phreakhead");
+		GameObject player = GameObject.Find ("murcaburd");
 
-		if (!(head || mouth) && !ending) {
+		bool enemyAlive = !(head || mouth);
+		if ( !ending && (!player || !enemyAlive )) {
 			Debug.Log ("Level Ended");
 			ending = true;
 			timeEnded = Time.fixedTime;
