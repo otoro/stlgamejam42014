@@ -8,8 +8,8 @@ public class EndLevelCheck : MonoBehaviour {
 	bool ending = false;
 	// Update is called once per frame
 	void Update () {
-		GameObject head = GameObject.Find ("phreakHead");
-		GameObject mouth = GameObject.Find ("phreakMouth");
+		GameObject head = GameObject.Find ("phreakmouth");
+		GameObject mouth = GameObject.Find ("phreakhead");
 
 		if (!(head || mouth) && !ending) {
 			Debug.Log ("Level Ended");
