@@ -16,8 +16,8 @@ public class rocket : MonoBehaviour {
 			mouseDown = true;
 			Debug.Log("Creating rocket");
 
-			Vector3	position1 = new Vector3(position.x,position.y+10,position.z);
-			Vector3 position2 = new Vector3(position.x,position.y-10,position.z);
+			Vector3	position1 = new Vector3(position.x,position.y+0.8f,position.z);
+			Vector3 position2 = new Vector3(position.x,position.y-0.8f,position.z);
 			
 				Instantiate(rocketClass, position1, transform.rotation); 
 				Instantiate(rocketClass, position2, transform.rotation); 
