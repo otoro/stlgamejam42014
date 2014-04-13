@@ -48,6 +48,3 @@ function Detonate () {
 		emitter.transform.parent = null;
 	}
 }
-
-// We require the barrel to be a rigidbody, so that it can do nice physics
-@script RequireComponent (Rigidbody)
