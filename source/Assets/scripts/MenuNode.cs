@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
 
 public class MenuNode : MonoBehaviour {
 	public GameObject pointer;
 	public string sceneName; // the scene to load
 	public AudioClip transitionFx;
 	public AudioClip mouseOverFx;
+	public string textFileName;
+	public GameObject missionTextBox;
 
 	private bool _selected;
 	private bool _loadScene;
@@ -54,11 +57,31 @@ public class MenuNode : MonoBehaviour {
 		audio.Play ();
 		pointer.renderer.material.color = Color.red;
         _selected = true;
+
+		missionTextBox.GetComponent<TextBubble>().text = this.ReadFile (textFileName);
+		Debug.Log (this.ReadFile(textFileName));
     }
 
     void OnMouseExit()
     {
+		missionTextBox.GetComponent<TextBubble>().text = "";
 		pointer.renderer.material.color = Color.blue;
         _selected = false;
     }
+
+	string ReadFile(string fileName) {
+		string fileContent = "";
+		if(fileName != string.Empty) {
+			StreamReader reader = new StreamReader(fileName);
+
+			using(reader) {
+				string line;
+				while((line = reader.ReadLine()) != null) {
+					fileContent += line + "\n";
+				}
+			}
+		}
+
+		return fileContent;
+	}
 }
