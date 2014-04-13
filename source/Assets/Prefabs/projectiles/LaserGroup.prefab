@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100002, guid: 648dc0f68c036274a92acdd4f1a08143, type: 2}
-  timeOut: 2
+  timeOut: .5
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100002, guid: 648dc0f68c036274a92acdd4f1a08143, type: 2}
-  timeOut: 2
+  timeOut: .5
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
