@@ -10,7 +10,7 @@ public class EndLevelCheck : MonoBehaviour {
 	void Update () {
 		GameObject head = GameObject.Find ("phreakmouth");
 		GameObject mouth = GameObject.Find ("phreakhead");
-		GameObject player = GameObject.Find ("murcaburd");
+		GameObject player = GameObject.Find ("murcaburd(nophysics) 2");
 
 		bool enemyAlive = !(head || mouth);
 		if ( !ending && (!player || !enemyAlive )) {

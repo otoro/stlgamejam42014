@@ -11,15 +11,16 @@ public class HealthDisplay : MonoBehaviour {
 	public Sprite health5;
 	public Sprite health6;
 
-	public float health;
+	private float health;
 
 	public DamageReceiver healthScript; //get the health script
 	public GameObject player;
-
+	private float _maxHealth;
 
 	// Use this for initialization
 	void Start () {
-		health = 70.0f;
+		health = healthScript.hitPoints;
+		_maxHealth = health;
 		healthScript = player.GetComponent<DamageReceiver>();
 	}
 	
@@ -28,28 +29,34 @@ public class HealthDisplay : MonoBehaviour {
 		health = healthScript.hitPoints;
 		try {
 			SpriteRenderer sr = healthSprite.GetComponent<SpriteRenderer>();
-			if(health > 60.0f) {
+			float percent = health / _maxHealth;
+			Debug.Log (percent);
+			if(percent > .80f) {
 				sr.sprite = health0;
 
 			}
-			else if (health > 500.0f) {
+			else if (percent > 0.7f) {
 				sr.sprite = health1;
 			}
-			else if(health > 400.0f) {
+			else if(percent > 0.60f) {
 				sr.sprite = health2;
 			}
-			else if(health > 300.0f) {
+			else if(percent > 0.50f) {
 				sr.sprite = health3;
 			}
-			else if (health > 200.0f) {
+			else if (percent > 0.40f) {
 				sr.sprite = health4;
 			}
-			else if (health > 100.0f) {
+			else if (percent > 0.30f) {
 				sr.sprite = health5;
 			}
-			else if(health > 0.0f) {
+			else if(percent > 0.20f) {
 				sr.sprite = health6;
 			}
+			else {
+				sr.sprite = null;
+			}
+
 		}
 		catch (UnityException e) {
 			Debug.LogException(e);

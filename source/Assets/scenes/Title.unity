@@ -113,13 +113,13 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: fbeedd9170ec9aa41ac53512e121f6bc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 3.79250813
+  MinDistance: 1.92053986
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -196,6 +196,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 35ae77398d663054a9ed512436ee5f80, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fbeedd9170ec9aa41ac53512e121f6bc, type: 3}
+    - target: {fileID: 11400000, guid: 35ae77398d663054a9ed512436ee5f80, type: 2}
+      propertyPath: levelClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7248d605edbcd954a82bad75a74f86ca, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35ae77398d663054a9ed512436ee5f80, type: 2}
   m_RootGameObject: {fileID: 302721224}
@@ -1581,7 +1589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuClip: {fileID: 8300000, guid: fbeedd9170ec9aa41ac53512e121f6bc, type: 3}
-  levelClip: {fileID: 8300000, guid: 42bc821706c59c247af75f0d4d86c952, type: 3}
+  levelClip: {fileID: 8300000, guid: 7248d605edbcd954a82bad75a74f86ca, type: 3}
   creditsClip: {fileID: 8300000, guid: b1851e1fa87bfbd4cb488f450baf315a, type: 3}
 --- !u!1 &1375928022
 GameObject:

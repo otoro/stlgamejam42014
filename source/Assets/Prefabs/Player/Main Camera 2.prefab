@@ -684,7 +684,7 @@ AudioSource:
   m_GameObject: {fileID: 100022}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: ba707819891e2674989118ea4b66e237, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7248d605edbcd954a82bad75a74f86ca, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .150000006
   m_Pitch: 1
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0bd6312c74623439203ec5afc68263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 200
+  hitPoints: 2000
   detonationDelay: 0
   explosion: {fileID: 400000, guid: 9b47da6980777a246b917aaf3e2fd5d5, type: 2}
   deadReplacement: {fileID: 0}
@@ -841,7 +841,6 @@ MonoBehaviour:
   health4: {fileID: 21300000, guid: 25a7926a2f7a4cf469d5f5320121625a, type: 3}
   health5: {fileID: 21300000, guid: 9835c4f7dc811364c9d78cd718109421, type: 3}
   health6: {fileID: 21300000, guid: 9b78d85722651954a8ac7abd3eee0777, type: 3}
-  health: 100
   healthScript: {fileID: 11400006}
   player: {fileID: 100004}
 --- !u!114 &11400014
@@ -856,7 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuClip: {fileID: 8300000, guid: fbeedd9170ec9aa41ac53512e121f6bc, type: 3}
-  levelClip: {fileID: 8300000, guid: ba707819891e2674989118ea4b66e237, type: 3}
+  levelClip: {fileID: 8300000, guid: 7248d605edbcd954a82bad75a74f86ca, type: 3}
   creditsClip: {fileID: 8300000, guid: b1851e1fa87bfbd4cb488f450baf315a, type: 3}
 --- !u!114 &11400016
 MonoBehaviour:
