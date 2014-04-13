@@ -6,14 +6,13 @@ Webster University</size></b>
 <color=blue><size=%TITLE_SIZE%><b>Tools:</b></size></color>
 <color=red>Unity</color>
 
-<color=blue><size=%TITLE_SIZE%><b>Story:</b></size></color>
-Someone
-
-<color=blue><size=%TITLE_SIZE%><b>Art:</b></size></color>
-<color=red>Someone</color>
-
-<color=blue><size=%TITLE_SIZE%><b>Programming:</b></size></color>
-Someone
-
-<color=blue><size=%TITLE_SIZE%><b>Sound:</b></size></color>
-<color=red>Someone</color>
+<color=blue><size=%TITLE_SIZE%><b>Team:</b></size></color>
+Alex "Monsoul7" Lake
+Alexander "DonGato" Fulton Diagre
+Cynara "Ryan8675" Ellis
+Eli "Superfly" Bent
+Eric "I Rule!" Wei
+Gabe "Gabelake22" Lake
+Maffitt "StrategicMilk" McDonald
+Srdjan "sgnn7" Grubor
+Tj "Teejay5" Hughes
