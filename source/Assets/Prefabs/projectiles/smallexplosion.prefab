@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionRadius: 2
   explosionPower: 15
-  explosionDamage: 20
+  explosionDamage: 100
   explosionTimeout: 1
 --- !u!198 &19800000
 ParticleSystem:
