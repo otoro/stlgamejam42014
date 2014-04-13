@@ -8,27 +8,44 @@ public class MenuNode : MonoBehaviour {
 	public AudioClip mouseOverFx;
 
 	private bool _selected;
+	private bool _loadScene;
+	private bool _freezeControl;
 
 	// Use this for initialization
-	void Start () {
-		//_selected = initialNode;		
+	void Start () {			
         _selected = false;
+		_loadScene = false;
+		_freezeControl = false;
 		pointer.renderer.material.color = Color.blue;
 	}
 	
 	// Update is called once per frame
-	void Update () {                
-        if (Input.GetMouseButtonDown(0) && _selected && sceneName != string.Empty)
-        {
-			audio.clip = transitionFx;
-			audio.Play ();
-            Application.LoadLevel(sceneName);
-        }
+	void Update () {          
+		if(!_freezeControl) {
+	        if (Input.GetMouseButtonDown(0) && _selected && sceneName != string.Empty)
+	        {
+				if(transitionFx != null) {		
+					audio.clip = transitionFx;
+					audio.Play ();
+				}
+
+				FreezeControl();
+				_loadScene = true;
+	        }
+		}
+
+		if(!audio.isPlaying && _loadScene) {
+			try {
+				Application.LoadLevel(sceneName);
+			}
+			catch(UnityException e) {
+				Debug.LogException(e);
+			}
+		}
 	}
 
-
-	void SetSelected() {
-		_selected = true;
+	void FreezeControl() {
+		_freezeControl = true;
 	}
 
     void OnMouseEnter()
