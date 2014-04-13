@@ -470,6 +470,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dampTime: .300000012
   target: {fileID: 1995832609}
+--- !u!1 &282379012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 282379013}
+  m_Layer: 13
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &282379013
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282379012}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -4.37113883e-08}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .625, y: .625, z: .625}
+  m_Children: []
+  m_Father: {fileID: 855659748}
 --- !u!1 &297642572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,7 +3594,8 @@ GameObject:
   - 114: {fileID: 855659743}
   - 114: {fileID: 855659742}
   - 75: {fileID: 855659741}
-  m_Layer: 0
+  - 114: {fileID: 855659749}
+  m_Layer: 13
   m_Name: eye
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -3682,8 +3709,29 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.88110828, y: -.57582593, z: 0}
   m_LocalScale: {x: 1.60000002, y: 1.60000002, z: 1.60000002}
-  m_Children: []
+  m_Children:
+  - {fileID: 282379013}
   m_Father: {fileID: 0}
+--- !u!114 &855659749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855659740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2247a405fb0d3aa4993b53e45e2a4e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 5400000, guid: 6bc2f5121271f8340b566f9f4324ae43, type: 2}
+  initialSpeed: 9
+  reloadTime: .5
+  currentAmmoCount: 400
+  magChangeTime: 1
+  InitialAmmo: 400
+  nozzle: {fileID: 282379013}
+  shootSound: {fileID: 0}
+  strayFactor: 0
 --- !u!1 &901396629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,7 +3745,7 @@ GameObject:
   - 114: {fileID: 901396633}
   m_Layer: 9
   m_Name: murcaburd(nophysics) 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5354,6 +5402,14 @@ Prefab:
       propertyPath: gameCamera
       value: 
       objectReference: {fileID: 82842749}
+    - target: {fileID: 11400004, guid: d50f0a6865063ff48adc864da991b46f, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 5400004, guid: 0287ea00d4e94ee4b9815f66fb9636db, type: 2}
+    - target: {fileID: 100000, guid: d50f0a6865063ff48adc864da991b46f, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d50f0a6865063ff48adc864da991b46f, type: 2}
   m_RootGameObject: {fileID: 901396629}
