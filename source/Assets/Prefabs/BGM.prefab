@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuClip: {fileID: 8300000, guid: fbeedd9170ec9aa41ac53512e121f6bc, type: 3}
-  levelClip: {fileID: 8300000, guid: ba707819891e2674989118ea4b66e237, type: 3}
+  levelClip: {fileID: 8300000, guid: 42bc821706c59c247af75f0d4d86c952, type: 3}
   creditsClip: {fileID: 8300000, guid: b1851e1fa87bfbd4cb488f450baf315a, type: 3}
 --- !u!1001 &100100000
 Prefab:
