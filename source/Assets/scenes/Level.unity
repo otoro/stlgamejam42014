@@ -1804,7 +1804,6 @@ GameObject:
   - 212: {fileID: 901507950}
   - 114: {fileID: 901507949}
   - 114: {fileID: 901507948}
-  - 114: {fileID: 901507947}
   - 54: {fileID: 901507946}
   - 65: {fileID: 901507952}
   - 114: {fileID: 901507953}
@@ -1831,21 +1830,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &901507947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: ccfc50dfb669dca4699ee3b888662a16,
-    type: 2}
-  m_PrefabInternal: {fileID: 1471786185}
-  m_GameObject: {fileID: 901507945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a196db7872a0324a98132ead9add4f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  relativePoint: {fileID: 767853729}
-  bulletTexture: {fileID: 2800000, guid: 38e77787a42abaa4bb54507fb6291f22, type: 3}
-  fireRate: 10
 --- !u!114 &901507948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,7 +2481,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400006, guid: ccfc50dfb669dca4699ee3b888662a16, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ccfc50dfb669dca4699ee3b888662a16, type: 2}
   m_RootGameObject: {fileID: 1531759804}
   m_IsPrefabParent: 0
@@ -2593,7 +2578,12 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400006, guid: 7f7693017604ad34592b0c3d9b8e5fa6, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400006, guid: 7f7693017604ad34592b0c3d9b8e5fa6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7f7693017604ad34592b0c3d9b8e5fa6, type: 2}
   m_RootGameObject: {fileID: 1651484864}
   m_IsPrefabParent: 0
@@ -2609,7 +2599,6 @@ GameObject:
   - 212: {fileID: 1783264451}
   - 114: {fileID: 1783264450}
   - 114: {fileID: 1783264449}
-  - 114: {fileID: 1783264448}
   - 54: {fileID: 1783264447}
   - 65: {fileID: 1783264446}
   - 114: {fileID: 1783264445}
@@ -2665,21 +2654,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1783264448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: 7f7693017604ad34592b0c3d9b8e5fa6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1761676012}
-  m_GameObject: {fileID: 1783264444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a196db7872a0324a98132ead9add4f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  relativePoint: {fileID: 981015679}
-  bulletTexture: {fileID: 2800000, guid: 38e77787a42abaa4bb54507fb6291f22, type: 3}
-  fireRate: 10
 --- !u!114 &1783264449
 MonoBehaviour:
   m_ObjectHideFlags: 0
