@@ -1220,8 +1220,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 767031861}
   - 212: {fileID: 767031860}
-  - 61: {fileID: 767031863}
   - 114: {fileID: 767031862}
+  - 61: {fileID: 767031863}
   m_Layer: 0
   m_Name: playButton
   m_TagString: Untagged
@@ -1284,7 +1284,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5, y: 2.80999994}
+  m_Size: {x: 8.59000015, y: 1.55999994}
   m_Center: {x: 0, y: 0}
 --- !u!1 &1049385537
 GameObject:
@@ -1375,8 +1375,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1196832694}
   - 212: {fileID: 1196832693}
-  - 61: {fileID: 1196832696}
   - 114: {fileID: 1196832695}
+  - 61: {fileID: 1196832696}
   m_Layer: 0
   m_Name: settingsButton
   m_TagString: Untagged
@@ -1439,7 +1439,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5, y: 2.80999994}
+  m_Size: {x: 13.9300003, y: 1.46000004}
   m_Center: {x: 0, y: 0}
 --- !u!1 &1375928022
 GameObject:
@@ -1450,8 +1450,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1375928026}
   - 212: {fileID: 1375928025}
-  - 61: {fileID: 1375928024}
   - 114: {fileID: 1375928023}
+  - 61: {fileID: 1375928024}
   m_Layer: 0
   m_Name: quitButton
   m_TagString: Untagged
@@ -1480,7 +1480,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5, y: 2.80999994}
+  m_Size: {x: 6.57000017, y: 1.47000003}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1375928025
 SpriteRenderer:
@@ -1525,8 +1525,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1377738088}
   - 212: {fileID: 1377738087}
-  - 61: {fileID: 1377738090}
   - 114: {fileID: 1377738089}
+  - 61: {fileID: 1377738090}
   m_Layer: 0
   m_Name: creditsButton
   m_TagString: Untagged
@@ -1589,7 +1589,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5, y: 2.80999994}
+  m_Size: {x: 11.9800005, y: 1.5999999}
   m_Center: {x: 0, y: 0}
 --- !u!1 &1537903973
 GameObject:
@@ -1650,8 +1650,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2142248137}
   - 212: {fileID: 2142248136}
-  - 61: {fileID: 2142248139}
   - 114: {fileID: 2142248138}
+  - 61: {fileID: 2142248139}
   m_Layer: 0
   m_Name: trainingButton
   m_TagString: Untagged
@@ -1714,5 +1714,5 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 5, y: 2.80999994}
+  m_Size: {x: 13.6799994, y: 1.51999998}
   m_Center: {x: 0, y: 0}
