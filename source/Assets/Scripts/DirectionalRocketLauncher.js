@@ -17,7 +17,7 @@ private var lastShot = -10.0;
 
 function Update () {
 	// Did the user press fire?
-	if (Input.GetButton ("Team1Fire1"))
+	if (Input.GetButton ("Fire1"))
 		Fire();
 }
 
