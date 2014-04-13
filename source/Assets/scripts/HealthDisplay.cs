@@ -11,15 +11,21 @@ public class HealthDisplay : MonoBehaviour {
 	public Sprite health5;
 	public Sprite health6;
 
-	private float health;
+	public float health;
+
+	public DamageReceiver healthScript; //get the health script
+	public GameObject player;
+
 
 	// Use this for initialization
 	void Start () {
 		health = 70.0f;
+		healthScript = player.GetComponent<DamageReceiver>();
 	}
 	
 	// Update is called once per frame
 	void Update () {	
+		health = healthScript.hitPoints;
 		try {
 			SpriteRenderer sr = healthSprite.GetComponent<SpriteRenderer>();
 			if(health > 60.0f) {
