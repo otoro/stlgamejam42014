@@ -251,7 +251,7 @@ MonoBehaviour:
   sceneName: Level
   transitionFx: {fileID: 8300000, guid: 6efdf903373fb7a4ca0752d984ab35e8, type: 3}
   mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
-  textFileName: Assets/Text/Russia.txt
+  textFileName: {fileID: 4900000, guid: 89de1683c4fe2614b9f751cf51ad0f48, type: 3}
   missionTextBox: {fileID: 1698612880}
 --- !u!82 &180593481
 AudioSource:
@@ -596,7 +596,7 @@ MonoBehaviour:
   sceneName: Level
   transitionFx: {fileID: 8300000, guid: 6efdf903373fb7a4ca0752d984ab35e8, type: 3}
   mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
-  textFileName: Assets/Text/Australia.txt
+  textFileName: {fileID: 4900000, guid: dd1e255deb71b5a43813b669caca30a8, type: 3}
   missionTextBox: {fileID: 1698612880}
 --- !u!82 &601181350
 AudioSource:
@@ -735,7 +735,7 @@ MonoBehaviour:
   sceneName: Level
   transitionFx: {fileID: 8300000, guid: 6efdf903373fb7a4ca0752d984ab35e8, type: 3}
   mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
-  textFileName: Assets/Text/MIT.txt
+  textFileName: {fileID: 4900000, guid: 04656b75018074e40904ff98c69249df, type: 3}
   missionTextBox: {fileID: 1698612880}
 --- !u!82 &614186933
 AudioSource:
@@ -759,7 +759,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -942,7 +942,7 @@ MonoBehaviour:
   sceneName: Level
   transitionFx: {fileID: 8300000, guid: 6efdf903373fb7a4ca0752d984ab35e8, type: 3}
   mouseOverFx: {fileID: 8300000, guid: d884e7a3642e6f44daaa485df492409f, type: 3}
-  textFileName: Assets/Text/Riot.txt
+  textFileName: {fileID: 4900000, guid: 1b61b819c0ae451419d3f4160bbe3662, type: 3}
   missionTextBox: {fileID: 1698612880}
 --- !u!82 &979776921
 AudioSource:
@@ -1312,6 +1312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53d9fae2e521f418c615fb30a8e336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuClip: {fileID: 0}
+  levelClip: {fileID: 0}
+  creditsClip: {fileID: 0}
 --- !u!82 &1547347110
 AudioSource:
   m_ObjectHideFlags: 0

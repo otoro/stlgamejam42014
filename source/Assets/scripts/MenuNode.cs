@@ -7,7 +7,7 @@ public class MenuNode : MonoBehaviour {
 	public string sceneName; // the scene to load
 	public AudioClip transitionFx;
 	public AudioClip mouseOverFx;
-	public string textFileName;
+	public TextAsset textFileName;
 	public GameObject missionTextBox;
 
 	private bool _selected;
@@ -58,8 +58,8 @@ public class MenuNode : MonoBehaviour {
 		pointer.renderer.material.color = Color.red;
         _selected = true;
 
-		missionTextBox.GetComponent<TextBubble>().text = this.ReadFile (textFileName);
-		Debug.Log (this.ReadFile(textFileName));
+		missionTextBox.GetComponent<TextBubble>().text = textFileName.text;
+		//Debug.Log (this.ReadFile(textFileName.text));
     }
 
     void OnMouseExit()
