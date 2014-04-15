@@ -34,6 +34,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: circle enemy
   m_TagString: Enemy
@@ -132,7 +133,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!54 &5400002
 Rigidbody:
@@ -159,7 +160,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.2399988, y: 10.2399988, z: 1.58000004}
+  m_Size: {x: 10.2399988, y: 10.2399988, z: 10}
   m_Center: {x: -1.52587891e-05, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -202,6 +203,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 2, y: 10}
   direction: {x: -1, y: 0}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c68c69a42ddc40930eea58438eb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100002, guid: 648dc0f68c036274a92acdd4f1a08143, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

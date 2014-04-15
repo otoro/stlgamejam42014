@@ -35,6 +35,7 @@ GameObject:
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400012}
   m_Layer: 13
   m_Name: circle enemy
   m_TagString: Enemy
@@ -102,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.66572857, y: .460343003, z: .29296875}
+  m_LocalPosition: {x: 43.6850357, y: 7.32966995, z: 0}
   m_LocalScale: {x: .451416254, y: .451416254, z: .451416254}
   m_Children:
   - {fileID: 400002}
@@ -175,7 +176,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
@@ -278,6 +279,18 @@ MonoBehaviour:
   detonationDelay: 0
   explosion: {fileID: 400002, guid: 0c2cb56a185941645be885811e8cecc0, type: 2}
   deadReplacement: {fileID: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c68c69a42ddc40930eea58438eb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100002, guid: 648dc0f68c036274a92acdd4f1a08143, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
