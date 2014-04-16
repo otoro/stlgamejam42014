@@ -8,7 +8,7 @@ Webster University</size></b>
 
 <color=blue><size=%TITLE_SIZE%><b>Team:</b></size></color>
 Alex "Monsoul7" Lake
-Alexander "DonGato" Fulton Diagre
+Alexander "DonGato" Fulton Daigre
 Cynara "Ryan8675" Ellis
 Eli "Superfly" Bent
 Eric "I Rule!" Wei
