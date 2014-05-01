@@ -1,6 +1,6 @@
 var explosionRadius = 5.0;
 var explosionPower = 10.0;
-var explosionDamage = 100.0;
+var explosionDamage = 12.5;
 var explosionTimeout = 2.0;
 
 function Start () {
@@ -19,7 +19,8 @@ function Start () {
 		hitPoints *= explosionDamage;
 
 		// Tell the rigidbody or any other script attached to the hit object how much damage is to be applied!
-		hit.SendMessageUpwards("ApplyDamage", hitPoints, SendMessageOptions.DontRequireReceiver);
+		//hit.SendMessageUpwards("ApplyDamage", hitPoints, SendMessageOptions.DontRequireReceiver);
+		hit.SendMessageUpwards("ApplyDamage", 12.5, SendMessageOptions.DontRequireReceiver);
 	}
 
 	// Apply explosion forces to all rigidbodies

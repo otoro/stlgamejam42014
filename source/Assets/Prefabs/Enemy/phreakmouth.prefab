@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0bd6312c74623439203ec5afc68263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 5000
+  hitPoints: 250
   detonationDelay: 0
   explosion: {fileID: 0}
   deadReplacement: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0bd6312c74623439203ec5afc68263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 18000
+  hitPoints: 500
   detonationDelay: 0
   explosion: {fileID: 0}
   deadReplacement: {fileID: 0}

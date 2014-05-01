@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0bd6312c74623439203ec5afc68263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 200
+  hitPoints: 25
   detonationDelay: 0
   explosion: {fileID: 400002, guid: 0c2cb56a185941645be885811e8cecc0, type: 2}
   deadReplacement: {fileID: 0}

@@ -31,26 +31,26 @@ public class HealthDisplay : MonoBehaviour {
 			SpriteRenderer sr = healthSprite.GetComponent<SpriteRenderer>();
 			float percent = health / _maxHealth;
 			Debug.Log (percent);
-			if(percent > .80f) {
+			if(percent == 1.0f) {
 				sr.sprite = health0;
 
 			}
-			else if (percent > 0.7f) {
+			else if (percent == 0.875f) {
 				sr.sprite = health1;
 			}
-			else if(percent > 0.60f) {
+			else if(percent == 0.75f) {
 				sr.sprite = health2;
 			}
-			else if(percent > 0.50f) {
+			else if(percent == 0.625f) {
 				sr.sprite = health3;
 			}
-			else if (percent > 0.40f) {
+			else if (percent == 0.5f) {
 				sr.sprite = health4;
 			}
-			else if (percent > 0.30f) {
+			else if (percent == 0.375f) {
 				sr.sprite = health5;
 			}
-			else if(percent > 0.20f) {
+			else if(percent == 0.25f) {
 				sr.sprite = health6;
 			}
 			else {
