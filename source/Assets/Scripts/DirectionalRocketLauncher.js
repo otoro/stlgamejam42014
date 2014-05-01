@@ -15,7 +15,7 @@ var strayFactor : float;
 
 private var lastShot = -10.0;
 
-function Update () {
+function FixedUpdate () {
 	// Did the user press fire?
 	if (Input.GetButton ("Fire1"))
 		Fire();

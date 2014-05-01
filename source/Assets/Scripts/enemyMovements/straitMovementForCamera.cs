@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class straitMovementForCamera : MonoBehaviour {
@@ -14,20 +14,16 @@ public class straitMovementForCamera : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider collider) {
-		if (collider.gameObject.tag == "Finish"){
-			canmove = false;
-			Debug.Log ("triggered");
+				if (collider.gameObject.tag == "Finish") {
+						canmove = false;
+						Debug.Log ("triggered");
+				}
 		}
-		}
-	// Update is called once per frame
-	void Update () {
+	void FixedUpdate(){
 		movement = new Vector2 (
 			speed.x * direction.x,
 			speed.y * direction.y);
 
-	}
-
-	void FixedUpdate(){
 		if (canmove) {
 				rigidbody.velocity = movement;
 		}

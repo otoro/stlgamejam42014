@@ -9,14 +9,13 @@ public class straitMovement : MonoBehaviour {
 
 	private Vector2 movement;
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		movement = new Vector2 (
 			speed.x * direction.x,
 			speed.y * direction.y);
 
-	}
-	void FixedUpdate()
-	{
+	
+	
 		rigidbody.velocity = movement;
 	}
 }

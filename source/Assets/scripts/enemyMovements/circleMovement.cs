@@ -10,7 +10,7 @@ public class circleMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		this.transform.RotateAround (pointOfRotation.transform.position, 
 		                             Vector3.forward, 
 		                             angularVelocity);

@@ -16,7 +16,7 @@ public class CreditScroller : MonoBehaviour {
 		credits.text = creditsText;
 	}
 
-	void Update () {
+	void FixedUpdate () {
 		Camera mainCamera = Camera.main;
 		GameObject.Find("CreditsText").transform.Translate(Vector3.up * Time.deltaTime / 10);
 		mainCamera.transform.Translate(Vector3.down * Time.deltaTime);

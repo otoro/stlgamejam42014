@@ -25,7 +25,7 @@ public class HealthDisplay : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {	
+	void FixedUpdate () {	
 		health = healthScript.hitPoints;
 		try {
 			SpriteRenderer sr = healthSprite.GetComponent<SpriteRenderer>();

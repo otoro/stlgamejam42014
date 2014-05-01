@@ -36,7 +36,7 @@ public class ContinuousBGMSingleton : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		// check if we've changed levels
 		if(_loadedLevelName != Application.loadedLevelName) {
 			// check if the music needs to be switched

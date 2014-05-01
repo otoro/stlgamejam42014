@@ -5,7 +5,7 @@ public class MovePlayer : MonoBehaviour {
 	public Camera gameCamera;
 	public float speed = 13.5f;
 	
-	void Update () {
+	void FixedUpdate () {
 		float x = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
 		float y = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 
